@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tv Touch Interativa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <!-- menu -->
+    <link rel="stylesheet" href="assets/css/bulma-pageloader.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="app"> 
+
+    <div id="menu1">
+        <div > 
+            <a @click="prevcidades">
+                <img src="assets/img/prev-cidades.png" class="btMenu1" />
+            </a>
+            <a @click="previsaoTempo">
+                <img src="assets/img/IC_PREV%20TEMPO.png" class="btMenu1" />
+            </a>
+            <a @click="toNaRede">
+                <img src="assets/img/to-na-rede.png" class="btMenu1" />
+            </a>
+            <a @click="entradaVideo">
+                <img src="assets/img/video.png" class="btMenu1" />
+            </a>
+            <a @click="g1">
+                <img src="assets/img/g1.png" class="btMenu1" />
+            </a>
+            <a @click="waze">
+                <img src="assets/img/waze.png" class="btMenu1" />
+            </a>
+            <a @click="twitter">
+                <img src="assets/img/twitter.png" class="btMenu1" />
+            </a>
+            <a @click="home">
+                <img src="assets/img/IC_HOME.png" class="btMenu1" />
+            </a>
+        </div>
+    </div>
+
+    <div id="canvas">        
+        <iframe src="https://g1.globo.com/am/amazonas/noticia/2018/07/20/para-71-dos-consumidores-de-manaus-localizacao-de-comercio-e-mais-importante-que-precos-de-produtos-diz-ifpeam.ghtml?utm_source=twitter&utm_medium=share-bar-desktop&utm_campaign=share-bar" height="100%" width="100%"></iframe>
+    </div>
+
+    <div id="pageloader" class="pageloader" v-bind:class="pageloader ? 'is-active' : ''">
+        <span class="title">Carregando</span>
+    </div>
+
+</div>
+
+<script  src="assets/js/menu.js" ></script>
+</body>
+
+<html>

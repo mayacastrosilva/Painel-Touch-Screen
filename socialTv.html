@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tv Touch Interativa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="assets/css/master.css">
+
+    <!-- menu -->
+    <link rel="stylesheet" href="assets/css/bulma-pageloader.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style type="text/css">
+           .top-g1{margin-bottom: 50px;} 
+    </style>
+</head>
+
+<body>
+    <div id="app">    
+
+
+        <div id="menu1">
+            <div > 
+                <a @click="prevcidades">
+                    <img src="assets/img/prev-cidades.png" class="btMenu1" />
+                </a>
+                <a @click="previsaoTempo">
+                    <img src="assets/img/IC_PREV%20TEMPO.png" class="btMenu1" />
+                </a>
+                <a @click="toNaRede">
+                    <img src="assets/img/to-na-rede.png" class="btMenu1" />
+                </a>
+                <a @click="entradaVideo">
+                    <img src="assets/img/video.png" class="btMenu1" />
+                </a>
+                <a @click="g1">
+                    <img src="assets/img/g1.png" class="btMenu1" />
+                </a>
+                <a @click="waze">
+                    <img src="assets/img/waze.png" class="btMenu1" />
+                </a>
+                <a @click="twitter">
+                    <img src="assets/img/twitter.png" class="btMenu1" />
+                </a>
+                <a @click="home">
+                    <img src="assets/img/IC_HOME.png" class="btMenu1" />
+                </a>
+            </div>
+        </div>
+
+        <div id="canvas" >
+            <section class="hero  is-fullheight">
+                
+                <div class="container has-text-centered ">
+
+                    <div class="columns">
+                        <div class="column is-mobile ">
+                            <div  class="bd-notification is-info top-g1">
+                                <img src="assets/img/g1-amazonas.png" width="150px">
+                            </div >
+                            <div class="columns"> 
+                                <div class="column"> 
+                                    <blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Casos de malária registrados no AM têm alta de 10,36% no 1º semestre de 2018 <a href="https://t.co/PirX9FfwpF">https://t.co/PirX9FfwpF</a></p>&mdash; G1 Amazonas (@g1amazonas) <a href="https://twitter.com/g1amazonas/status/1021173569991081985?ref_src=twsrc%5Etfw">22 de julho de 2018</a></blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                                <div class="column"> 
+                                    <blockquote class="twitter-tweet" data-lang="pt"><p lang="pt" dir="ltr">Investigados na operação Maus Caminhos e seis policiais são denunciados por tortura, no Amazonas <a href="https://t.co/rpVZGxx5li">https://t.co/rpVZGxx5li</a></p>&mdash; G1 Amazonas (@g1amazonas) <a href="https://twitter.com/g1amazonas/status/1021412642194448384?ref_src=twsrc%5Etfw">23 de julho de 2018</a></blockquote>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                </div>
+                            </div>                    
+                        </div> 
+                    </div>                         
+
+                </div> 
+            </div>
+            <img class="" src="assets/img/bg-g1.png" /> 
+        </div>
+
+        <div id="pageloader" class="pageloader" v-bind:class="pageloader ? 'is-active' : ''">
+            <span class="title">Carregando</span>
+        </div>
+
+    </div>
+
+    <script  src="assets/js/menu.js" ></script>
+</body>
+
+<html>
